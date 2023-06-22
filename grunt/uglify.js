@@ -10,8 +10,8 @@ module.exports = {
 			compress: {
 				global_defs: {NODE: false, BROWSER: true}
 			},
-			sourceMap: true,
-			sourceMapName: function (js) { return js + '.map' }
+			mangle: false,
+			beautify: true
 		},
 		files: {
 			'dist/browser/<%= pkgName %>.js': 'dist/<%= pkgName %>.js'
